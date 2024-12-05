@@ -1,6 +1,8 @@
 import React from "react";
 import { Cards } from "./Cards";
 import { Footer } from "./Footer";
+import { Navbar } from "./Navbar";
+import { Jumbotron } from "./Jumbotron";
 
 const defaultCardsData = [
   {
@@ -35,7 +37,7 @@ const defaultCardsData = [
 
 const Home = ({ cardsData = defaultCardsData }) => (
   <div>
-    <div style={{ height: "70px" }}></div> {/* Hueco para Navbar */}
+    <div style={{ height: "70px" }}><Navbar/></div>
 
     <div style={{ height: "300px" }}><Jumbotron/></div>
     <Cards cardsData={cardsData} />

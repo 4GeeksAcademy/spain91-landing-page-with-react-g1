@@ -8,7 +8,7 @@ export const Footer = () => {
 
             <hr />
 
-            <p>
+            <p className="text-center">
 
                 <a href="https://github.com/bhgeeky/bhgeeky">Brian Hernández González</a>, with
 

@@ -8,17 +8,17 @@ export const Navbar = () => {
 
             <div className="container-fluid">
 
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a className="navbar-brand" href="#">Start Bootstrap</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 
-                <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
 
                 </button>
 
-                <div className="collapse navbar-collapse d-flex" id="navbarScroll">
+                <div className="collapse navbar-collapse text-align-left" id="navbarScroll">
 
-                    <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
 
                         <li className="nav-item">
 

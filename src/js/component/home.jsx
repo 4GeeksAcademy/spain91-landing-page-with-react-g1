@@ -1,5 +1,6 @@
 import React from "react";
 import { Cards } from "./Cards";
+import { Footer } from "./Footer";
 
 const defaultCardsData = [
   {
@@ -38,6 +39,7 @@ const Home = ({ cardsData = defaultCardsData }) => (
 
     <div style={{ height: "300px" }}><Jumbotron/></div>
     <Cards cardsData={cardsData} />
+    <Footer />
   </div>
 );
 

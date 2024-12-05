@@ -35,9 +35,11 @@ const defaultCardsData = [
 const Home = ({ cardsData = defaultCardsData }) => (
   <div>
     <div style={{ height: "70px" }}></div> {/* Hueco para Navbar */}
-    <div style={{ height: "300px" }}></div> {/* Hueco para Jumbotron */}
+
+    <div style={{ height: "300px" }}><Jumbotron/></div>
     <Cards cardsData={cardsData} />
   </div>
 );
+
 
 export default Home;

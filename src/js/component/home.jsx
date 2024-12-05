@@ -1,26 +1,47 @@
 import React from "react";
+import { Cards } from "./Cards";
+import { Footer } from "./Footer";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+const defaultCardsData = [
+  {
+    image: "https://randomuser.me/api/portraits/women/92.jpg",
+    title: "Candidato 1",
+    Nombre: "María García",
+    Mail: "maria.garcia@example.com",
+    buttonText: "Contactar",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/men/44.jpg",
+    title: "Candidato 2",
+    Nombre: "Carlos López",
+    Mail: "carlos.lopez@example.com",
+    buttonText: "Contactar",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    title: "Candidato 3",
+    Nombre: "Ana Torres",
+    Mail: "ana.torres@example.com",
+    buttonText: "Contactar",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/men/77.jpg",
+    title: "Candidato 4",
+    Nombre: "Juan Pérez",
+    Mail: "juan.perez@example.com",
+    buttonText: "Contactar",
+  },
+];
 
-//create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
+const Home = ({ cardsData = defaultCardsData }) => (
+  <div>
+    <div style={{ height: "70px" }}></div> {/* Hueco para Navbar */}
+
+    <div style={{ height: "300px" }}><Jumbotron/></div>
+    <Cards cardsData={cardsData} />
+    <Footer />
+  </div>
+);
+
 
 export default Home;

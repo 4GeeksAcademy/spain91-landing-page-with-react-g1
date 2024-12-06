@@ -39,7 +39,7 @@ const Home = ({ cardsData = defaultCardsData }) => (
   <div>
     <div style={{ height: "70px" }}><Navbar/></div>
 
-    <div style={{ height: "300px" }}><Jumbotron/></div>
+    <div style={{ height: "350px" }}><Jumbotron/></div>
     <Cards cardsData={cardsData} />
     <Footer />
   </div>
